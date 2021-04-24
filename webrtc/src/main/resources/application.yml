@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /webrtc
+spring:
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates
+    suffix: .html
+    cache: false
+  web:
+    resources:
+      static-locations: classpath:/static/

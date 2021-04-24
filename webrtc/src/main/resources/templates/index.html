@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--自适应屏幕-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--让部分国产浏览器(360浏览器)默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <title></title>
+</head>
+<body>
+<div>
+    <h2>在线用户列表</h2>
+    <ul id="videoList">
+        <li class='left'><video id="localVideo" autoplay style="width: 100%;height: 100%;" /></li>
+    </ul>
+</div>
+<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/video.js}" ></script>
+</body>
+</html>
